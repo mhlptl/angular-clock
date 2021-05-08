@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
 import { ClockComponent } from './clock/clock.component';
 import { TimezonePickerComponent } from './timezone-picker/timezone-picker.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TimezonePickerComponent } from './timezone-picker/timezone-picker.compo
     TimezonePickerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+		HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

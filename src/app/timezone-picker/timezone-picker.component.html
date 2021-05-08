@@ -1,1 +1,3 @@
-<p>timezone-picker works!</p>
+<div *ngFor="let tz of (timezones | async)" >
+	<p>{{tz.name}}</p>
+</div>

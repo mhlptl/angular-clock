@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TimezoneService } from '../timezone.service';
 
 @Component({
   selector: 'app-timezone-picker',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimezonePickerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private timezoneService: TimezoneService) {}
+
+	timezones = this.timezoneService.getTimeZones();
 
   ngOnInit(): void {
   }
