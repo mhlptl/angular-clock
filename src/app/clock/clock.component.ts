@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class ClockComponent implements OnInit {
 
-	date = new Date();
+	@Input() date!: Date;
 
 	updateTime = () => {
 		this.date = new Date();
@@ -16,13 +16,12 @@ export class ClockComponent implements OnInit {
 
 	intervalId = setInterval(this.updateTime, 1000);
 
-  constructor() {
-	}
+  constructor() {}
 
   ngOnInit(): void {
   }
 
-	ngOnDestroy(): void {
+	OnDestroy(): void {
 		clearInterval(this.intervalId);
 	}
 

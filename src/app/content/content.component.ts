@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
+	dates: Date[] = []
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+	addMore(): void {
+		this.dates.push(new Date());
+	}
 
 }
