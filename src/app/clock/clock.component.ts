@@ -9,6 +9,7 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 export class ClockComponent implements OnInit {
 
 	@Input() date!: Date;
+	@Input() utc!: string;
 
 	updateTime = () => {
 		this.date = new Date();

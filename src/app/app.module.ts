@@ -6,6 +6,7 @@ import { ContentComponent } from './content/content.component';
 import { ClockComponent } from './clock/clock.component';
 import { TimezonePickerComponent } from './timezone-picker/timezone-picker.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-		HttpClientModule
+		HttpClientModule,
+		FormsModule,
+		ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

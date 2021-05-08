@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-	dates: Date[] = []
+	dates: {date: Date, utc: string}[] = []
 
   constructor() { }
 
@@ -15,7 +15,10 @@ export class ContentComponent implements OnInit {
   }
 
 	addMore(): void {
-		this.dates.push(new Date());
+		this.dates.push({date: new Date(), utc: '-4'});
 	}
 
+	addNew(utc: string): void {
+		this.dates.push({date: new Date(), utc: utc});
+	}
 }

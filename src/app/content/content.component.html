@@ -1,9 +1,9 @@
 <div id="content">
 	<div *ngFor="let date of dates">
-		<app-clock [date]="date" ></app-clock>
+		<app-clock [date]="date.date" [utc]="date.utc" ></app-clock>
 	</div>
 	<button (click)="addMore()" >Add More</button>
 	<div>
-		<app-timezone-picker></app-timezone-picker>
+		<app-timezone-picker (newClockEvent)="addNew($event)" ></app-timezone-picker>
 	</div>
 </div>

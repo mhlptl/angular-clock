@@ -1,5 +1,8 @@
-<select>
-	<option *ngFor="let tz of (timezones | async)" [value]="tz.name" >
-		{{tz.location}}
-	</option>
-</select>
+<form [formGroup]="utcForm" (submit)="handleSubmit()" >
+	<select id="utc" formControlName="utc">
+		<option *ngFor="let tz of (timezones | async)" [value]="tz.UTC_Offset" >
+			(UTC{{tz.UTC_Offset}}) {{tz.location}}
+		</option>
+	</select>
+	<button type="submit">Submit</button>
+</form>
