@@ -1,0 +1,119 @@
+{
+	"timezones": [
+		{
+			"UTC_Offset": "+14",
+			"name": "LINT",
+			"location": "Kiritimati"
+		},
+		{
+			"UTC_Offset": "+13",
+			"name": "TOT",
+			"location": "Nukualofa"
+		},
+		{
+			"UTC_Offset": "+12:45",
+			"name": "CHAST",
+			"location": "Chatham Islands"
+		},
+		{
+			"UTC_Offset": "+12",
+			"name": "ANAT",
+			"location": "Anadyr"
+		},
+		{
+			"UTC_Offset": "+11",
+			"name": "SBT",
+			"location": "Honiara"
+		},
+		{
+			"UTC_Offset": "+10:30",
+			"name": "LHST",
+			"location": "Lord Howe Island"
+		},
+		{
+			"UTC_Offset": "+10",
+			"name": "AEST",
+			"location": "Melbourne"
+		},
+		{
+			"UTC_Offset": "+9:30",
+			"name": "ACST",
+			"location": "Adelaide"
+		},
+		{
+			"UTC_Offset": "+9",
+			"name": "JST",
+			"location": "Tokyo"
+		},
+		{
+			"UTC_Offset": "+8:45",
+			"name": "ACWST",
+			"location": "Eucla"
+		},
+		{
+			"UTC_Offset": "+8",
+			"name": "CST",
+			"location": "Beijing"
+		},
+		{
+			"UTC_Offset": "+7",
+			"name": "WIB",
+			"location": "Jakarta"
+		},
+		{
+			"UTC_Offset": "+6:30",
+			"name": "MMT",
+			"location": "Yangon"
+		},
+		{
+			"UTC_Offset": "+6",
+			"name": "BST",
+			"location": "Dhaka"
+		},
+		{
+			"UTC_Offset": "+5:45",
+			"name": "NPT",
+			"location": "Kathmandu"
+		},
+		{
+			"UTC_Offset": "+5:30",
+			"name": "IST",
+			"location": "New Delhi"
+		},
+		{
+			"UTC_Offset": "+5",
+			"name": "UZT",
+			"location": "Tashkent"
+		},
+		{
+			"UTC_Offset": "+4:30",
+			"name": "IRDT",
+			"location": "Tehran"
+		},
+		{
+			"UTC_Offset": "+4",
+			"name": "GST",
+			"location": "Dubai"
+		},
+		{
+			"UTC_Offset": "+3",
+			"name": "MSK",
+			"location": "Moscow"
+		},
+		{
+			"UTC_Offset": "+2",
+			"name": "CEST",
+			"location": "Brussels"
+		},
+		{
+			"UTC_Offset": "+1",
+			"name": "BST",
+			"location": "London"
+		},
+		{
+			"UTC_Offset": "+0",
+			"name": "WET",
+			"location": "Casablanca"
+		}
+	]
+}

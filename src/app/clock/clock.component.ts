@@ -14,7 +14,7 @@ export class ClockComponent implements OnInit {
 		this.date = new Date();
 	}
 
-	intervalId = setInterval(this.updateTime, 1000);
+	intervalId = setInterval(this.updateTime, 200);
 
   constructor() {}
 

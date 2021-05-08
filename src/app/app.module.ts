@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
 import { ClockComponent } from './clock/clock.component';
+import { TimezonePickerComponent } from './timezone-picker/timezone-picker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
-    ClockComponent
+    ClockComponent,
+    TimezonePickerComponent
   ],
   imports: [
     BrowserModule
