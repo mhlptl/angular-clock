@@ -10,7 +10,7 @@
 		"location": "Nukualofa"
 	},
 	{
-		"UTC_Offset": "+12:45",
+		"UTC_Offset": "+1245",
 		"name": "CHAST",
 		"location": "Chatham Islands"
 	},
@@ -25,7 +25,7 @@
 		"location": "Honiara"
 	},
 	{
-		"UTC_Offset": "+10:30",
+		"UTC_Offset": "+1030",
 		"name": "LHST",
 		"location": "Lord Howe Island"
 	},
@@ -35,7 +35,7 @@
 		"location": "Melbourne"
 	},
 	{
-		"UTC_Offset": "+9:30",
+		"UTC_Offset": "+0930",
 		"name": "ACST",
 		"location": "Adelaide"
 	},
@@ -45,7 +45,7 @@
 		"location": "Tokyo"
 	},
 	{
-		"UTC_Offset": "+8:45",
+		"UTC_Offset": "+0845",
 		"name": "ACWST",
 		"location": "Eucla"
 	},
@@ -60,7 +60,7 @@
 		"location": "Jakarta"
 	},
 	{
-		"UTC_Offset": "+6:30",
+		"UTC_Offset": "+0630",
 		"name": "MMT",
 		"location": "Yangon"
 	},
@@ -70,12 +70,12 @@
 		"location": "Dhaka"
 	},
 	{
-		"UTC_Offset": "+5:45",
+		"UTC_Offset": "+0545",
 		"name": "NPT",
 		"location": "Kathmandu"
 	},
 	{
-		"UTC_Offset": "+5:30",
+		"UTC_Offset": "+0530",
 		"name": "IST",
 		"location": "New Delhi"
 	},
@@ -85,7 +85,7 @@
 		"location": "Tashkent"
 	},
 	{
-		"UTC_Offset": "+4:30",
+		"UTC_Offset": "+0430",
 		"name": "IRDT",
 		"location": "Tehran"
 	},
@@ -113,5 +113,75 @@
 		"UTC_Offset": "+0",
 		"name": "WET",
 		"location": "Casablanca"
+	},
+	{
+		"UTC_Offset": "-1",
+		"name": "CVT",
+		"location": "Praia"
+	},
+	{
+		"UTC_Offset": "-2",
+		"name": "WGST",
+		"location": "Nuuk"
+	},
+	{
+		"UTC_Offset": "-0230",
+		"name": "NDT",
+		"location": "St. John's"
+	},
+	{
+		"UTC_Offset": "-3",
+		"name": "ART",
+		"location": "Buenos Aires"
+	},
+	{
+		"UTC_Offset": "-4",
+		"name": "EDT",
+		"location": "New York"
+	},
+	{
+		"UTC_Offset": "-5",
+		"name": "CDT",
+		"location": "Mexico City"
+	},
+	{
+		"UTC_Offset": "-6",
+		"name": "CST",
+		"location": "Guatemala City"
+	},
+	{
+		"UTC_Offset": "-7",
+		"name": "PDT",
+		"location": "Los Angeles"
+	},
+	{
+		"UTC_Offset": "-8",
+		"name": "AKDT",
+		"location": "Anchorage"
+	},
+	{
+		"UTC_Offset": "-9",
+		"name": "HDT",
+		"location": "Adak"
+	},
+	{
+		"UTC_Offset": "-0930",
+		"name": "MART",
+		"location": "Taiohae"
+	},
+	{
+		"UTC_Offset": "-10",
+		"name": "HST",
+		"location": "Honolulu"
+	},
+	{
+		"UTC_Offset": "-11",
+		"name": "NUT",
+		"location": "Alofi"
+	},
+	{
+		"UTC_Offset": "-12",
+		"name": "AoE",
+		"location": "Baker Island"
 	}
 ]

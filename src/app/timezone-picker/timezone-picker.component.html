@@ -1,3 +1,5 @@
-<div *ngFor="let tz of (timezones | async)" >
-	<p>{{tz.name}}</p>
-</div>
+<select>
+	<option *ngFor="let tz of (timezones | async)" [value]="tz.name" >
+		{{tz.location}}
+	</option>
+</select>
