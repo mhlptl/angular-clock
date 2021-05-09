@@ -1,4 +1,5 @@
 <div *ngIf="date" class="clock-container">
 	<h1>{{utc.location}}</h1>
+	<p>{{ date | date:'mediumDate':utc.UTC_Offset}}</p>
 	<p>{{ date | date:'mediumTime':utc.UTC_Offset}}</p>
 </div>
