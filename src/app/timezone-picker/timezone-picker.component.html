@@ -1,8 +1,9 @@
-<form [formGroup]="utcForm" (submit)="handleSubmit()" >
-	<select id="utc" formControlName="utc">
+<form id="utc-form" [formGroup]="utcForm" (submit)="handleSubmit()" >
+	<label for="utc" >Add New Clock:</label>
+	<select name="utc" id="utc" formControlName="utc">
 		<option *ngFor="let tz of (timezones | async)" [value]="tz | toString" >
 			(UTC{{tz.UTC_Offset}}) {{tz.location}}
 		</option>
 	</select>
-	<button type="submit">Submit</button>
+	<button id="utc-button" type="submit">Add New</button>
 </form>

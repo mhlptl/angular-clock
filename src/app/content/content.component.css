@@ -1,7 +1,8 @@
 #content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	flex-direction: column;
+	display: grid;
+	padding-top: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	height: 100px;
 }
