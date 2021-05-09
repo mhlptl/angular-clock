@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
+import { TimeZone } from '../timezone.service';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 export class ClockComponent implements OnInit {
 
 	@Input() date!: Date;
-	@Input() utc!: string;
+	@Input() utc!: TimeZone;
 
 	updateTime = () => {
 		this.date = new Date();

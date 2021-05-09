@@ -1,6 +1,6 @@
 <form [formGroup]="utcForm" (submit)="handleSubmit()" >
 	<select id="utc" formControlName="utc">
-		<option *ngFor="let tz of (timezones | async)" [value]="tz.UTC_Offset" >
+		<option *ngFor="let tz of (timezones | async)" [value]="tz | toString" >
 			(UTC{{tz.UTC_Offset}}) {{tz.location}}
 		</option>
 	</select>

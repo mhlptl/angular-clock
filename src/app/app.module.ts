@@ -7,13 +7,15 @@ import { ClockComponent } from './clock/clock.component';
 import { TimezonePickerComponent } from './timezone-picker/timezone-picker.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToStringPipe } from './to-string.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
     ClockComponent,
-    TimezonePickerComponent
+    TimezonePickerComponent,
+    ToStringPipe
   ],
   imports: [
     BrowserModule,

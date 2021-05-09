@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TimeZone } from '../timezone.service';
 
 @Component({
   selector: 'app-content',
@@ -7,18 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-	dates: {date: Date, utc: string}[] = []
+	dates: {date: Date, utc: TimeZone}[] = []
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-	addMore(): void {
-		this.dates.push({date: new Date(), utc: '-4'});
-	}
-
-	addNew(utc: string): void {
+	addNew(utc: TimeZone): void {
 		this.dates.push({date: new Date(), utc: utc});
 	}
 }

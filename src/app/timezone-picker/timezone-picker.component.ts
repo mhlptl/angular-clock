@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { TimezoneService } from '../timezone.service';
+import { TimeZone, TimezoneService } from '../timezone.service';
 
 interface formProps {
 	utc: string;
@@ -13,13 +13,17 @@ interface formProps {
 })
 export class TimezonePickerComponent implements OnInit {
 
-	@Output() newClockEvent = new EventEmitter<string>();
+	@Output() newClockEvent = new EventEmitter<TimeZone>();
 
   constructor(private timezoneService: TimezoneService, private formBuilder: FormBuilder) {}
 
 	timezones = this.timezoneService.getTimeZones();
 	utcForm = this.formBuilder.group({
-		utc: '-4'
+		utc: JSON.stringify({
+			"UTC_Offset": "-4",
+			"name": "EDT",
+			"location": "New York"
+		})
 	});
 
   ngOnInit(): void {
@@ -27,7 +31,8 @@ export class TimezonePickerComponent implements OnInit {
 
 	handleSubmit(): void {
 		const value: formProps = this.utcForm.value;
-		this.newClockEvent.emit(value.utc);
+		console.log(this.utcForm)
+		this.newClockEvent.emit(JSON.parse(value.utc));
 	}
 
 
